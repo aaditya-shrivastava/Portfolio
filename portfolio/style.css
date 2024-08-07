@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-}
-body{
+  }
+  body {
     background-color: black;
-}
-main{
+  }
+  main {
     height: 100vh;
     background-color: white;
     position: relative;
@@ -13,42 +13,59 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-main .edge{
+  }
+  main .edge {
     height: 400px;
     width: 400px;
     background-color: black;
-    box-shadow: 0px 10px  10px black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.top-left{
+  }
+  .top-left {
     position: absolute;
     top: -250px;
     left: -250px;
     transform: rotate(-45deg);
-}
-.top-right{
+  }
+  .btn{
+    position: absolute;
+    bottom: 1em;
+    background: transparent;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    width: 9em;
+    height: 3em;
+    font-size: large;
+    font-weight: bolder;
+  }
+  .btn:hover{
+    background-color: rgba(42, 42, 42, 0.321);
+  }
+  .bottom{
+    transform: rotate(180deg);
+  }
+  .top-right {
     position: absolute;
     top: -250px;
     right: -250px;
     transform: rotate(45deg);
-}
-.bottom-left{
+  }
+  .bottom-left {
     position: absolute;
     bottom: -250px;
     left: -250px;
     transform: rotate(-135deg);
-}
-.bottom-right{
+  }
+  .bottom-right {
     position: absolute;
     bottom: -250px;
     right: -250px;
     transform: rotate(135deg);
-}
-.centerDiv{
+  }
+  .centerDiv {
     z-index: 11;
     background-color: aliceblue;
     border: 1px solid wheat;
@@ -60,16 +77,59 @@ main .edge{
     align-items: center;
     position: relative;
     border-radius: 40px;
-}
-.centerDiv h2{
+  }
+  .centerDiv h2 {
     position: absolute;
     top: 1em;
-}
-.centerDiv img{
+  }
+  .centerDiv img {
     position: absolute;
     bottom: 2em;
-}
-.centerDiv button{
+  }
+  .centerDiv button {
     position: absolute;
     bottom: 0px;
-}
+  }
+  
+  /*! mode button */
+  .switch {
+    position: absolute;
+    bottom: 1vh;
+    display: inline-block;
+    width: 10vh;
+    height: 34px;
+  }
+  .slider {
+    border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+  input:checked + .slider {
+    background-color: black;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  input[type="checkbox" i] {
+    margin: 6px 3px 3px 4px;
+  }  

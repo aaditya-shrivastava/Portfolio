@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="top-left edge">
-            top-left
-        </div>
-        
-        <div class="top-right edge">
-            top-right
-        </div>
-        
-        <div class="bottom-left edge">
-            bottom-left
-        </div>
+      <div class="top-left edge">
+        <button id="btn-top-left" class="btn">About</button>
+      </div>
 
-        <div class="bottom-right edge">
-            bottom-right
-        </div>
+      <div class="top-right edge">
+        <button id="btn-top-right" class="btn">Skills</button>
+      </div>
 
-        <div class="centerDiv">
-            <h2>My Portfolio</h2>
-            <img src="Screenshot 2023-12-11 022000.png" alt="" width="100">
-            <button id="mode">s</button>
-        </div> 
+      <div class="bottom-left edge">
+        <button id="btn-bottom-right" class="btn bottom">Projects</button>
+      </div>
 
+      <div class="bottom-right edge">
+        <button id="btn-bottom-right" class="btn bottom">Contact</button>
+      </div>
 
+      <div class="centerDiv">
+        <h2>My Portfolio</h2>
+        <img src="imge.png" id="front" width="100" />
+        <img src="imge.png" id="TL" width="100" hidden>
+        <img src="imge.png" id="TR" width="100" hidden>
+        <img src="imge.png" id="BL" width="100" hidden>
+        <img src="imge.png" id="BR" width="100" hidden>
+    </div>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider"></span>
+    </label>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
