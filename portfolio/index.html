@@ -7,13 +7,53 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <main>
+    <main id="main">
       <div class="top-left edge">
         <button id="btn-top-left" class="btn">About</button>
       </div>
+      <div class="about-content hidden shadow" id="about">
+        <h2>About Myself</h2>
+        <p>
+          I am Aaditya Shrivastava, I love to create new designs, also I like to
+          improve myself by learning and increasing my knowledge for surrounding
+        </p>
 
+      </div>
       <div class="top-right edge">
         <button id="btn-top-right" class="btn">Skills</button>
+      </div>
+      <div class="skills-content hidden shadow" id="skills">
+        <label id="learning"
+          ><strong>Skills</strong>
+          <div class="progress">
+            <div id="html">HTML 85%</div>
+          </div>
+          <div class="progress">
+            <div id="CSS">CSS 75%</div>
+          </div>
+          <div class="progress">
+            <div id="JS">JavaSCript 80%</div>
+          </div>
+          <div class="progress">
+            <div id="Node">nodeJS 70%</div>
+          </div>
+          <div class="progress">
+            <div id="DB">DataBase 75%</div>
+          </div>
+          <div class="progress">
+            <div id="API">API Testing 90%</div>
+          </div>
+        </label>
+      </div>
+
+      <!--* Center div for Images -->
+      <div class="centerDiv">
+        <h2>My Portfolio</h2>
+        <img src="imge.png" id="front" width="100" />
+        <img src="imge.png" id="TL" width="100" hidden />
+        <img src="imge.png" id="TR" width="100" hidden />
+        <img src="imge.png" id="BL" width="100" hidden />
+        <img src="imge.png" id="BR" width="100" hidden />
       </div>
 
       <div class="bottom-left edge">
@@ -24,18 +64,10 @@
         <button id="btn-bottom-right" class="btn bottom">Contact</button>
       </div>
 
-      <div class="centerDiv">
-        <h2>My Portfolio</h2>
-        <img src="imge.png" id="front" width="100" />
-        <img src="imge.png" id="TL" width="100" hidden>
-        <img src="imge.png" id="TR" width="100" hidden>
-        <img src="imge.png" id="BL" width="100" hidden>
-        <img src="imge.png" id="BR" width="100" hidden>
-    </div>
-    <label class="switch">
-      <input type="checkbox" />
-      <span class="slider"></span>
-    </label>
+      <label class="switch" id="mode">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
     </main>
     <script src="script.js"></script>
   </body>
