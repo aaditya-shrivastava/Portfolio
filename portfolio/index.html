@@ -17,7 +17,6 @@
           I am Aaditya Shrivastava, I love to create new designs, also I like to
           improve myself by learning and increasing my knowledge for surrounding
         </p>
-
       </div>
       <div class="top-right edge">
         <button id="btn-top-right" class="btn">Skills</button>
@@ -49,19 +48,49 @@
       <!--* Center div for Images -->
       <div class="centerDiv">
         <h2>My Portfolio</h2>
-        <img src="imge.png" id="front" width="100" />
-        <img src="imge.png" id="TL" width="100" hidden />
-        <img src="imge.png" id="TR" width="100" hidden />
-        <img src="imge.png" id="BL" width="100" hidden />
-        <img src="imge.png" id="BR" width="100" hidden />
+        <div class="img">
+          <img src="front.png" id="front" class="" width="170" />
+          <img src="top-left.png" id="TL" class="hidden" width="170" />
+          <img src="top-right.png" id="TR" class="hidden" width="165" />
+          <img src="bottom-left.png" id="BL" class="hidden" width="190" />
+          <img src="bottom-right.png" id="BR" class="hidden" width="160"  />
+        </div>
       </div>
 
       <div class="bottom-left edge">
-        <button id="btn-bottom-right" class="btn bottom">Projects</button>
+        <button id="btn-bottom-left" class="btn bottom">Projects</button>
       </div>
-
+      <div class="hidden" id="project">
+        <div class="p1" id="pro1">
+          <label for="">Netflix clone</label>
+          <div class="semi-project" id="project1"></div>
+        </div>
+        <div class="p2 hidden" id="pro2">
+          <label for="">Simple Calculator</label>
+          <div class="semi-project" id="project2"></div>
+        </div>
+        <button id="projectbtn">Next</button>
+      </div>
       <div class="bottom-right edge">
         <button id="btn-bottom-right" class="btn bottom">Contact</button>
+      </div>
+      <div class="hidden" id="contact">
+        <strong>Contact</strong>
+        <p>
+          <img src="linkedin.svg" id="linkedin" /> -<a
+            href="https://www.linkedin.com/feed/?trk=public_post_google-one-tap-submit"
+            >linkedin.</a
+          >
+        </p>
+        <p>
+          <img src="mail.svg" id="mail" />-
+          <a href="mailto:aadityashrivastava2000@gmail.com">Mail.</a>
+        </p>
+        <p>
+          <img src="phone.svg" id="phone" /> -<a href="tel:+918989002018"
+            >Contact</a
+          >
+        </p>
       </div>
 
       <label class="switch" id="mode">
