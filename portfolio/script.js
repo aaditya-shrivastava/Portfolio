@@ -16,6 +16,7 @@ let countSkills = true;
 let countProBtn = true;
 let countContact = true;
 
+
 //!img
 let front = document.getElementById("front");
 let TL = document.getElementById("TL");
@@ -23,15 +24,16 @@ let TR = document.getElementById("TR");
 let BL = document.getElementById("BL");
 let BR = document.getElementById("BR");
 
-myImg = [front, TL, TR, BL, BR];
+myImg = [front,TL,TR,BL,BR];
 function addHiddenToImg() {
-  myImg.forEach((ele) => {
-    ele.classList.add("hidden");
-  });
+  myImg.forEach((ele)=>{
+    ele.classList.add('hidden')
+  })
 }
 function frontRemoveHidden() {
-  front.classList.remove("hidden");
+  front.classList.remove('hidden');
 }
+
 
 myContent = [aboutContent, skillsContent, projectCount, contactContent];
 function addHidden() {
@@ -46,7 +48,7 @@ aboutBtn.addEventListener("click", () => {
     addHidden();
     aboutContent.classList.remove("hidden");
     addHiddenToImg();
-    TL.classList.remove("hidden");
+    TL.classList.remove('hidden');
   } else if (!countAbout) {
     countAbout = true;
     addHiddenToImg();
@@ -59,7 +61,7 @@ proBTN.addEventListener("click", () => {
     countProBtn = false;
     addHidden();
     addHiddenToImg();
-    BL.classList.remove("hidden");
+    BL.classList.remove('hidden');
     projectCount.classList.remove("hidden");
   } else if (!countProBtn) {
     countProBtn = true;
@@ -88,7 +90,7 @@ skillsBtn.addEventListener("click", () => {
     addHidden();
     countSkills = false;
     addHiddenToImg();
-    TR.classList.remove("hidden");
+    TR.classList.remove('hidden');
     skillsContent.classList.remove("hidden");
   } else if (!countSkills) {
     countSkills = true;
@@ -103,7 +105,7 @@ contactBtn.addEventListener("click", () => {
     addHidden();
     countContact = false;
     addHiddenToImg();
-    BR.classList.remove("hidden");
+    BR.classList.remove('hidden');
     contactContent.classList.remove("hidden");
   } else if (!countContact) {
     countContact = true;
